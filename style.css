@@ -978,9 +978,9 @@ p {
 /* Redes sociais no rodapé compacto. */
 .site-footer .footer-inner { align-items: center; }
 .footer-social { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; }
-.footer-social a { gap: 8px; text-decoration: none; }
-.footer-social a:hover { color: var(--accent); text-decoration: underline; }
-.footer-social span { color: var(--accent); }
+.footer-social a { justify-content: center; width: 44px; min-height: 44px; color: var(--accent); text-decoration: none; border-radius: 8px; }
+.footer-social a:hover { background: #ff8c0015; }
+.footer-social svg { width: 22px; height: 22px; display: block; }
 @media (max-width: 640px) {
   .site-footer .footer-inner { justify-content: center; gap: 8px 24px; text-align: center; }
   .site-footer .footer-inner > p { width: 100%; }
