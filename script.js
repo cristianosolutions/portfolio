@@ -101,7 +101,7 @@ function initializeResume() {
 }
 initializeResume();
 
-// Sincroniza a URL e o menu depois que a rolagem se estabiliza.
+// Atualiza o menu ativo sem alterar a URL durante a rolagem.
 function initializeScrollNavigation() {
   const sections = Array.from(document.querySelectorAll("main section[id]"));
   const links = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
@@ -120,11 +120,6 @@ function initializeScrollNavigation() {
       window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
     if (atBottom) current = sections[sections.length - 1];
 
-    const hash = current.id === "inicio" ? "" : "#" + current.id;
-    if (window.location.hash !== hash) {
-      window.history.replaceState(window.history.state, "",
-        window.location.pathname + window.location.search + hash);
-    }
     const menuId = current.id === "atuacao" ? "sobre" : current.id;
     for (const link of links) {
       if (link.getAttribute("href") === "#" + menuId) {
@@ -145,3 +140,37 @@ function initializeScrollNavigation() {
   scheduleUpdate();
 }
 initializeScrollNavigation();
+// Navega entre as seções mantendo o endereço da página fixo.
+function initializeSectionLinks() {
+  document.addEventListener("click", (event) => {
+    if (event.defaultPrevented || event.button !== 0 ||
+        event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || link.hasAttribute("download") ||
+        (link.target && link.target !== "_self")) return;
+    const id = link.getAttribute("href").slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+    event.preventDefault();
+    if (!target.hasAttribute("tabindex")) {
+      target.setAttribute("tabindex", "-1");
+      target.addEventListener("blur", () => target.removeAttribute("tabindex"), { once: true });
+    }
+    target.focus({ preventScroll: true });
+    target.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+      block: "start"
+    });
+  });
+
+  // Remove fragmentos antigos depois de o navegador abrir a seção solicitada.
+  function clearInitialHash() {
+    if (window.location.hash) {
+      window.history.replaceState(window.history.state, "",
+        window.location.pathname + window.location.search);
+    }
+  }
+  if (document.readyState === "complete") clearInitialHash();
+  else window.addEventListener("load", clearInitialHash, { once: true });
+}
+initializeSectionLinks();
