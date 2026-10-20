@@ -1,0 +1,62 @@
+PORTFÓLIO — GUIA DE PERSONALIZAÇÃO
+=================================
+
+Site estático sem dependências e sem etapa de compilação.
+Abra index.html no navegador ou use o Live Server do seu editor.
+
+ESTRUTURA
+index.html: conteúdo semântico e seções.
+style.css: variáveis visuais, componentes e regras responsivas.
+script.js: funções independentes para menu, ano e contato.
+assets/: ilustração de perfil e favicon em SVG local.
+
+1. IDENTIDADE
+Troque SeuNome, Seu Nome, profissão e textos de apresentação no HTML.
+Atualize title, meta description, texto alternativo da foto e rodapé.
+Não publique habilidades, resultados ou experiências que não sejam seus.
+
+2. FOTO
+Substitua assets/profile.svg por sua foto em WebP ou JPEG otimizado.
+Atualize src, alt e dimensões width/height conforme a proporção do arquivo.
+A ilustração atual é um espaço reservado, não uma fotografia.
+
+3. PROJETOS
+Troque títulos, descrições e tecnologias por projetos reais.
+Substitua as capas decorativas por capturas com alt descritivo, width,
+height e loading="lazy". Remova aria-hidden do contêiner ao usar imagens
+informativas. Troque “Detalhes em breve” por um link com endereço real
+e nome específico, por exemplo “Conhecer o projeto Nome”.
+Não use href="#" para simular destinos.
+
+4. CONTATO
+Preencha CONTACT_EMAIL no início de script.js com seu e-mail real.
+O botão permanece desativado até que um endereço válido seja configurado.
+O formulário NÃO envia dados a um servidor: abre o aplicativo de e-mail
+com assunto e mensagem preenchidos. O visitante confirma o envio nele.
+É necessário ter um aplicativo de e-mail configurado. O endereço direto
+é apresentado como alternativa. Os campos não são apagados após a ação.
+Para envio direto, será necessário integrar um serviço/backend, validar
+os dados no servidor e implementar proteção contra abuso e feedback real.
+Não coloque senhas, tokens ou chaves privadas no JavaScript público.
+
+5. VISUAL E ACESSIBILIDADE
+Cores e largura máxima ficam em :root no style.css.
+Layout: três colunas em desktop, duas em tablet e uma em celular.
+Menu móvel funciona por botão com estado acessível. Sem JavaScript,
+os links continuam visíveis. Há foco visível, link para pular navegação,
+campos rotulados e respeito à preferência por movimento reduzido.
+
+6. ANTES DE PUBLICAR
+Revise o conteúdo e todos os links; configure o contato.
+Teste teclado, zoom a 200%, celular e desktop em navegadores atuais.
+Valide o envio pelo aplicativo de e-mail e substitua as imagens de exemplo.
+Após definir o domínio, acrescente URL canônica e metadados Open Graph
+com URL e imagem reais para compartilhamento.
+
+7. FOTO E CURRÍCULO ATUAIS
+Foto: assets/cristiano-magno.jpg.
+Currículo em PDF: assets/cristiano-magno.pdf.
+O download funciona pelo link da seção Currículo, inclusive sem JavaScript.
+Ao substituir o currículo por outro formato, atualize o link e o texto no
+index.html e a constante RESUME_URL no script.js.
+Os estudos de caso continuam ilustrativos, aguardando projetos reais.
