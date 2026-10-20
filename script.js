@@ -100,3 +100,48 @@ function initializeResume() {
   pending.hidden = true;
 }
 initializeResume();
+
+// Sincroniza a URL e o menu depois que a rolagem se estabiliza.
+function initializeScrollNavigation() {
+  const sections = Array.from(document.querySelectorAll("main section[id]"));
+  const links = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+  const header = document.querySelector(".site-header");
+  if (!sections.length) return;
+
+  let timer;
+  function synchronizeSection() {
+    const marker = (header?.getBoundingClientRect().height || 0) + 48;
+    let current = sections[0];
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= marker) current = section;
+      else break;
+    }
+    const atBottom = window.scrollY > 0 &&
+      window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+    if (atBottom) current = sections[sections.length - 1];
+
+    const hash = current.id === "inicio" ? "" : "#" + current.id;
+    if (window.location.hash !== hash) {
+      window.history.replaceState(window.history.state, "",
+        window.location.pathname + window.location.search + hash);
+    }
+    const menuId = current.id === "atuacao" ? "sobre" : current.id;
+    for (const link of links) {
+      if (link.getAttribute("href") === "#" + menuId) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    }
+  }
+  function scheduleUpdate() {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(synchronizeSection, 150);
+  }
+  window.addEventListener("scroll", scheduleUpdate, { passive: true });
+  window.addEventListener("resize", scheduleUpdate);
+  window.addEventListener("hashchange", scheduleUpdate);
+  window.addEventListener("load", scheduleUpdate);
+  scheduleUpdate();
+}
+initializeScrollNavigation();
