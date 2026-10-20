@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfólio profissional: conheça minha trajetória, habilidades e projetos e entre em contato."
+      content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo."
     />
     <meta name="theme-color" content="#182329" />
-    <title>Cristiano Magno</title>
+    <title>Cristiano Magno | TI e Desenvolvimento</title>
+    <link rel="canonical" href="https://cristianomagno.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Cristiano Magno" />
+    <meta property="og:title" content="Cristiano Magno | TI e Desenvolvimento" />
+    <meta property="og:description" content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo." />
+    <meta property="og:url" content="https://cristianomagno.netlify.app/" />
+    <meta property="og:image" content="https://cristianomagno.netlify.app/assets/compartilhamento.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Cristiano Magno — suporte, infraestrutura de TI e desenvolvimento" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cristiano Magno | TI e Desenvolvimento" />
+    <meta name="twitter:description" content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo." />
+    <meta name="twitter:image" content="https://cristianomagno.netlify.app/assets/compartilhamento.jpg" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -65,10 +80,12 @@
           <figure class="portrait">
             <div class="portrait-frame">
               <img
-                src="assets/cristiano-magno.jpg"
+                src="assets/cristiano-magno-800.webp"
+                srcset="assets/cristiano-magno-400.webp 400w, assets/cristiano-magno-800.webp 800w"
+                sizes="(max-width: 640px) 290px, (max-width: 960px) 40vw, 440px"
                 alt="Cristiano Magno em sua formatura, vestindo beca e segurando o diploma"
-                width="4160"
-                height="6240"
+                width="800"
+                height="1200"
                 fetchpriority="high"
               />
             </div>
@@ -82,31 +99,12 @@
             <h2 id="titulo-sobre">Um pouco<br />sobre mim.</h2>
           </div>
           <div class="about-content">
-            <p class="lead">
-              Sou graduado em Análise e Desenvolvimento de Sistemas pela
-              Universidade de Fortaleza (UNIFOR).
-            </p>
-            <p>
-              Tenho experiência em suporte técnico, infraestrutura de TI e
-              desenvolvimento. Minha trajetória na área de tecnologia começou em
-              2010, atuando no atendimento a usuários, na instalação e
-              manutenção de computadores e notebooks e na administração de
-              ambientes de TI.
-            </p>
-            <p>
-              Na área de infraestrutura, trabalho com redes de computadores,
-              cabeamento estruturado, equipamentos UniFi, firewall pfSense e
-              sistemas de CFTV. Também tenho experiência com suporte a
-              softwares, impressoras, automação de PDV e ERP Consinco/TOTVS.
-            </p>
-            <p>
-              Complemento essa experiência com formação em desenvolvimento Full
-              Stack pela Geração Tech e Front-End pela Alura, além da construção
-              de projetos com HTML, CSS, JavaScript, React, Node.js, APIs,
-              Git/GitHub e banco de dados. Valorizo a ética, o trabalho em
-              equipe, a organização e o aprendizado contínuo para resolver
-              problemas e construir soluções úteis.
-            </p>
+            <p class="lead">Sou graduado em Análise e Desenvolvimento de Sistemas pela Universidade de Fortaleza (UNIFOR).</p>
+            <p>Tenho experiência em suporte técnico, infraestrutura de TI e desenvolvimento. Minha trajetória na área de tecnologia começou em 2010, atuando no atendimento a usuários, na instalação e manutenção de computadores e notebooks e na administração de ambientes de TI.</p>
+            <h3>Infraestrutura e suporte</h3>
+            <p>Na área de infraestrutura, trabalho com redes de computadores, cabeamento estruturado, equipamentos UniFi, firewall pfSense e sistemas de CFTV. Também tenho experiência com suporte a softwares, impressoras, automação de PDV e ERP Consinco/TOTVS.</p>
+            <h3>Desenvolvimento e aprendizado</h3>
+            <p>Complemento essa experiência com formação em desenvolvimento Full Stack pela Geração Tech e Front-End pela Alura, além da construção de projetos com HTML, CSS, JavaScript, React, Node.js, APIs, Git/GitHub e banco de dados. Valorizo a ética, o trabalho em equipe, a organização e o aprendizado contínuo para resolver problemas e construir soluções úteis.</p>
             <h3>Áreas de atuação</h3>
             <ul class="skill-list">
               <li>Suporte técnico</li>
@@ -116,55 +114,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="section expertise-section"
-        id="atuacao"
-        aria-labelledby="titulo-atuacao"
-      >
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Conexões que fazem sentido</p>
-              <h2 id="titulo-atuacao">
-                Três frentes.<br />Uma visão integrada.
-              </h2>
-            </div>
-            <p>Entender o problema, cuidar da base e construir a solução.</p>
-          </div>
-          <div class="expertise-grid">
-            <article class="expertise-card">
-              <span class="expertise-icon" aria-hidden="true">↗</span>
-              <p class="small-label">01 / Pessoas</p>
-              <h3>Suporte</h3>
-              <p>
-                O ponto de encontro entre pessoas, dúvidas e tecnologia. Escuta,
-                diagnóstico e orientação para encontrar o caminho da solução.
-              </p>
-            </article>
-            <article class="expertise-card">
-              <span class="expertise-icon" aria-hidden="true">⌘</span>
-              <p class="small-label">02 / Estrutura</p>
-              <h3>Infraestrutura</h3>
-              <p>
-                A base que conecta equipamentos, serviços e aplicações. Uma
-                visão do ambiente para entender como cada parte se relaciona.
-              </p>
-            </article>
-            <article class="expertise-card">
-              <span class="expertise-icon code-icon" aria-hidden="true"
-                >&lt;/&gt;</span
-              >
-              <p class="small-label">03 / Soluções</p>
-              <h3>Desenvolvimento</h3>
-              <p>
-                Ideias transformadas em código. Construção de aplicações e
-                oportunidades de automação para simplificar tarefas.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section
+<section
         class="section section-alt"
         id="projetos"
         aria-labelledby="titulo-projetos"
@@ -180,25 +130,22 @@
             <article class="project-card github-card">
               <a
                 class="project-screenshot"
-                href="assets/projeto-controle-financeiro.png"
+                href="assets/projeto-controle-financeiro.webp"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ampliar imagem de Control Finance (abre em nova aba)"
               >
                 <img
-                  src="assets/projeto-controle-financeiro.png"
+                  src="assets/projeto-controle-financeiro.webp"
+                  srcset="assets/projeto-controle-financeiro-640.webp 640w, assets/projeto-controle-financeiro.webp 1200w"
+                  sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px"
                   alt="Dashboard do Control Finance com saldo, receitas, despesas e gráfico de evolução financeira"
                   loading="lazy"
                   decoding="async"
                 />
               </a>
               <div class="project-body">
-                <h3>Control Finance</h3>
-                <p>
-                  Aplicação web para organizar receitas e despesas, acompanhar o
-                  saldo e consultar relatórios financeiros.
-                </p>
-                <p class="small-label technology-label">
+                <h3>Control Finance</h3><dl class="project-context"><dt>O problema</dt><dd>Centralizar o acompanhamento das finanças pessoais.</dd><dt>A solução</dt><dd>Registro de receitas e despesas, painel mensal e relatórios, com API e persistência de dados.</dd></dl><p class="small-label technology-label">
                   Tecnologias utilizadas
                 </p>
                 <ul
@@ -227,25 +174,22 @@
             <article class="project-card github-card">
               <a
                 class="project-screenshot"
-                href="assets/projeto-nfce-monitor.jpg"
+                href="assets/projeto-nfce-monitor.webp"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ampliar imagem de NFC-e Monitor (abre em nova aba)"
               >
                 <img
-                  src="assets/projeto-nfce-monitor.jpg"
+                  src="assets/projeto-nfce-monitor.webp"
+                  srcset="assets/projeto-nfce-monitor-640.webp 640w, assets/projeto-nfce-monitor.webp 1200w"
+                  sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px"
                   alt="Interface do NFC-e Monitor com análise de XMLs, consulta à SEFAZ e indicadores de situação fiscal"
                   loading="lazy"
                   decoding="async"
                 />
               </a>
               <div class="project-body">
-                <h3>NFC-e Monitor</h3>
-                <p>
-                  Aplicação desktop para analisar XMLs de NFC-e e consultar a
-                  situação fiscal na SEFAZ/SVRS com certificado digital A1.
-                </p>
-                <p class="small-label technology-label">
+                <h3>NFC-e Monitor</h3><dl class="project-context"><dt>O problema</dt><dd>Conferir arquivos XML e verificar a situação fiscal das NFC-e.</dd><dt>A solução</dt><dd>Leitura em lote, consulta à SEFAZ/SVRS com certificado A1, filtros e exportação para Excel.</dd></dl><p class="small-label technology-label">
                   Tecnologias utilizadas
                 </p>
                 <ul
@@ -273,25 +217,22 @@
             <article class="project-card github-card">
               <a
                 class="project-screenshot"
-                href="assets/projeto-pdv-layout.png"
+                href="assets/projeto-pdv-layout.webp"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ampliar imagem de PDV Layout Studio (abre em nova aba)"
               >
                 <img
-                  src="assets/projeto-pdv-layout.png"
+                  src="assets/projeto-pdv-layout.webp"
+                  srcset="assets/projeto-pdv-layout-640.webp 640w, assets/projeto-pdv-layout.webp 1200w"
+                  sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px"
                   alt="PDV Layout Studio com editor visual, modelo de supermercado, camadas e painel de propriedades"
                   loading="lazy"
                   decoding="async"
                 />
               </a>
               <div class="project-body">
-                <h3>PDV Layout Studio</h3>
-                <p>
-                  Editor visual de telas para PDV, com edição de elementos no
-                  canvas, modelos de layout e exportação em PNG.
-                </p>
-                <p class="small-label technology-label">
+                <h3>PDV Layout Studio</h3><dl class="project-context"><dt>O problema</dt><dd>Facilitar a criação visual de telas para pontos de venda.</dd><dt>A solução</dt><dd>Edição de elementos no canvas, organização por camadas, projetos JSON e exportação em PNG.</dd></dl><p class="small-label technology-label">
                   Tecnologias utilizadas
                 </p>
                 <ul
@@ -348,31 +289,15 @@
           <div class="resume-list">
             <article>
               <span class="resume-number">01</span>
-              <div>
-                <p class="small-label">Atuação</p>
-                <h3>Suporte técnico</h3>
-                <p>
-                  Atendimento, diagnóstico de problemas e orientação a usuários.
-                </p>
-              </div>
+              <div><p class="small-label">Atuação</p><h3>Suporte técnico</h3><p>Atendimento, diagnóstico de problemas e orientação a usuários.</p></div>
             </article>
             <article>
               <span class="resume-number">02</span>
-              <div>
-                <p class="small-label">Atuação</p>
-                <h3>Infraestrutura de TI</h3>
-                <p>
-                  Uma visão integrada de ambientes, equipamentos e serviços.
-                </p>
-              </div>
+              <div><p class="small-label">Atuação</p><h3>Infraestrutura de TI</h3><p>Uma visão integrada de ambientes, equipamentos e serviços.</p></div>
             </article>
             <article>
               <span class="resume-number">03</span>
-              <div>
-                <p class="small-label">Atuação</p>
-                <h3>Desenvolvimento</h3>
-                <p>Construção de soluções e automação de tarefas com código.</p>
-              </div>
+              <div><p class="small-label">Atuação</p><h3>Desenvolvimento</h3><p>Construção de soluções e automação de tarefas com código.</p></div>
             </article>
           </div>
         </div>
@@ -429,7 +354,7 @@
               role="status"
               aria-live="polite"
             ></p>
-            <a id="contact-email" class="text-link" hidden></a>
+            <a id="contact-email" class="text-link" href="mailto:cristianosolutions@gmail.com">Ou escreva para: cristianosolutions@gmail.com</a>
             <noscript>
               <p>Ative o JavaScript para usar o formulário de contato.</p>
             </noscript>

@@ -120,7 +120,7 @@ function initializeScrollNavigation() {
       window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
     if (atBottom) current = sections[sections.length - 1];
 
-    const menuId = current.id === "atuacao" ? "sobre" : current.id;
+    const menuId = current.id;
     for (const link of links) {
       if (link.getAttribute("href") === "#" + menuId) {
         link.setAttribute("aria-current", "location");
