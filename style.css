@@ -977,11 +977,19 @@ p {
 
 /* Redes sociais no rodapé compacto. */
 .site-footer .footer-inner { align-items: center; }
-.footer-social { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-social { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
 .footer-social a { justify-content: center; width: 44px; min-height: 44px; color: var(--accent); text-decoration: none; border-radius: 8px; }
 .footer-social a:hover { background: #ff8c0015; }
-.footer-social svg { width: 22px; height: 22px; display: block; }
+.footer-social svg { width: 22px; height: 22px; display: block; transition: transform .22s ease, filter .22s ease; }
 @media (max-width: 640px) {
   .site-footer .footer-inner { justify-content: center; gap: 8px 24px; text-align: center; }
   .site-footer .footer-inner > p { width: 100%; }
+}
+/* Movimento discreto dos ícones sociais. */
+@media (prefers-reduced-motion: no-preference) {
+  .footer-social a:hover svg,
+  .footer-social a:focus-visible svg {
+    transform: translateY(-3px) scale(1.12);
+    filter: drop-shadow(0 3px 5px #ff8c0040);
+  }
 }
