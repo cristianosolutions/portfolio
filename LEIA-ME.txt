@@ -12,7 +12,7 @@ assets/: imagens, ícone, imagem de compartilhamento e currículo PDF.
 
 IMAGENS
 A página usa WebP com srcset: foto em 400/800 px e projetos em 640/1200 px.
-Os originais foram preservados como fonte para futuras atualizações.
+A pasta assets contém somente as versões utilizadas pelo site; mantenha os originais fora do projeto.
 Ao trocar uma imagem, gere as duas versões e ajuste src/srcset no HTML.
 As capturas dos projetos podem ser abertas em tamanho maior por clique.
 A imagem de compartilhamento é assets/compartilhamento.jpg (1200 x 630).
