@@ -3,7 +3,7 @@
 (() => {
   const root = document.documentElement;
   const storageKey = "portfolio-theme";
-  let theme = window.matchMedia?.("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  let theme = "dark";
   try {
     const saved = localStorage.getItem(storageKey);
     if (saved === "light" || saved === "dark") theme = saved;
