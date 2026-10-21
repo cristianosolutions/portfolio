@@ -1,238 +1,633 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo." name="description"/>
-<meta content="#182329" name="theme-color"/>
-<title>Cristiano Magno | Portfólio</title>
-<link href="https://cristianomagno.netlify.app/" rel="canonical"/>
-<meta content="website" property="og:type"/>
-<meta content="pt_BR" property="og:locale"/>
-<meta content="Cristiano Magno" property="og:site_name"/>
-<meta content="Cristiano Magno | Portfólio" property="og:title"/>
-<meta content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo." property="og:description"/>
-<meta content="https://cristianomagno.netlify.app/" property="og:url"/>
-<meta content="https://cristianomagno.netlify.app/assets/compartilhamento.jpg" property="og:image"/>
-<meta content="1200" property="og:image:width"/>
-<meta content="630" property="og:image:height"/>
-<meta content="Cristiano Magno — suporte, infraestrutura de TI e desenvolvimento" property="og:image:alt"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Cristiano Magno | Portfólio" name="twitter:title"/>
-<meta content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo." name="twitter:description"/>
-<meta content="https://cristianomagno.netlify.app/assets/compartilhamento.jpg" name="twitter:image"/>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<script src="theme.js"></script>
-<link href="style.css" rel="stylesheet"/>
-<script defer="" src="script.js"></script>
-</head>
-<body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="site-header">
-<nav aria-label="Navegação principal" class="nav container">
-<button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu" class="menu-toggle" hidden="" type="button">
-<span aria-hidden="true" class="menu-icon"><span></span><span></span><span></span></span>
-</button>
-<ul class="nav-links" id="menu-principal">
-<li><a href="#inicio">Início</a></li>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#projetos">Projetos</a></li>
-
-<li>
-<a href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
-</li>
-</ul>
-<button aria-label="Ativar tema claro" class="theme-toggle" hidden="" id="theme-toggle" title="Ativar tema claro" type="button">
-<svg aria-hidden="true" class="theme-sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"></path></svg>
-<svg aria-hidden="true" class="theme-moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"></path></svg>
-</button>
-</nav>
-</header>
-<main id="conteudo" tabindex="-1">
-<section aria-labelledby="titulo-inicio" class="hero section" id="inicio">
-<div class="container hero-inner">
-<div class="hero-text">
-<h1 id="titulo-inicio">
-              Olá, eu sou<br/><span>Cristiano Magno.</span>
-</h1>
-<p class="hero-role">SUPORTE . INFRAESTRUTURA . DESENVOLVIMENTO</p>
-<p class="hero-desc">
-              Atuo como suporte, infraestrutura e desenvolvimento, conectando as
-              necessidades de quem usa a tecnologia às soluções que fazem tudo
-              funcionar.
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo."
+      name="description"
+    />
+    <meta content="#182329" name="theme-color" />
+    <title>Cristiano Magno | Portfólio</title>
+    <link href="https://cristianomagno.netlify.app/" rel="canonical" />
+    <meta content="website" property="og:type" />
+    <meta content="pt_BR" property="og:locale" />
+    <meta content="Cristiano Magno" property="og:site_name" />
+    <meta content="Cristiano Magno | Portfólio" property="og:title" />
+    <meta
+      content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo."
+      property="og:description"
+    />
+    <meta content="https://cristianomagno.netlify.app/" property="og:url" />
+    <meta
+      content="https://cristianomagno.netlify.app/assets/compartilhamento.jpg"
+      property="og:image"
+    />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta
+      content="Cristiano Magno — suporte, infraestrutura de TI e desenvolvimento"
+      property="og:image:alt"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Cristiano Magno | Portfólio" name="twitter:title" />
+    <meta
+      content="Cristiano Magno: graduado em ADS pela UNIFOR, com experiência em suporte, infraestrutura de TI e desenvolvimento. Conheça meus projetos e currículo."
+      name="twitter:description"
+    />
+    <meta
+      content="https://cristianomagno.netlify.app/assets/compartilhamento.jpg"
+      name="twitter:image"
+    />
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <script src="theme.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script defer="" src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <nav aria-label="Navegação principal" class="nav container">
+        <button
+          aria-controls="menu-principal"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="menu-toggle"
+          hidden=""
+          type="button"
+        >
+          <span aria-hidden="true" class="menu-icon"
+            ><span></span><span></span><span></span
+          ></span>
+        </button>
+        <ul class="nav-links" id="menu-principal">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li>
+            <a href="#contato"
+              >Vamos conversar <span aria-hidden="true">↗</span></a
+            >
+          </li>
+        </ul>
+        <button
+          aria-label="Ativar tema claro"
+          class="theme-toggle"
+          hidden=""
+          id="theme-toggle"
+          title="Ativar tema claro"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="theme-sun"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="1.8"
+            viewbox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"
+            ></path>
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="theme-moon"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.8"
+            viewbox="0 0 24 24"
+          >
+            <path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <section aria-labelledby="titulo-inicio" class="hero section" id="inicio">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 id="titulo-inicio">
+              Olá, eu sou<br /><span>Cristiano Magno.</span>
+            </h1>
+            <p class="hero-role">SUPORTE . INFRAESTRUTURA . DESENVOLVIMENTO</p>
+            <p class="hero-desc">
+              Atuo na área de Tecnologia da Informação, com experiência em
+              suporte técnico e infraestrutura de TI, aliando conhecimentos em
+              desenvolvimento de software para criar soluções eficientes e
+              transformar desafios em resultados.
             </p>
-<div class="hero-actions">
-<a class="btn btn-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a>
-<a class="btn btn-outline" href="#curriculo">Conhecer meu currículo ↓</a>
-</div>
-</div>
-<figure class="portrait">
-<div class="portrait-frame">
-<img alt="Cristiano Magno em sua formatura, vestindo beca e segurando o diploma" fetchpriority="high" height="1200" sizes="(max-width: 640px) 290px, (max-width: 960px) 40vw, 440px" src="assets/cristiano-magno-800.webp" srcset="assets/cristiano-magno-400.webp 400w, assets/cristiano-magno-800.webp 800w" width="800"/>
-</div>
-</figure>
-</div>
-</section>
-<section aria-labelledby="titulo-sobre" class="section" id="sobre">
-<div class="container about-grid">
-<div>
-<p class="eyebrow">01 / Minha trajetória</p>
-<h2 id="titulo-sobre">Um pouco<br/>sobre mim.</h2>
-</div>
-<div class="about-content">
-<p class="lead">Sou graduado em Análise e Desenvolvimento de Sistemas pela Universidade de Fortaleza (UNIFOR).</p>
-<p>Tenho experiência em suporte técnico, infraestrutura de TI e desenvolvimento. Minha trajetória na área de tecnologia começou em 2010, atuando no atendimento a usuários, na instalação e manutenção de computadores e notebooks e na administração de ambientes de TI.</p>
-<h3>Infraestrutura e suporte</h3>
-<p>Na área de infraestrutura, trabalho com redes de computadores, cabeamento estruturado, equipamentos UniFi, firewall pfSense e sistemas de CFTV. Também tenho experiência com suporte a softwares, impressoras, automação de PDV e ERP Consinco/TOTVS.</p>
-<h3>Desenvolvimento e aprendizado</h3>
-<p>Complemento essa experiência com formação em desenvolvimento Full Stack, além da construção de projetos com HTML, CSS, JavaScript, React, Node.js, APIs, Git/GitHub e banco de dados. Valorizo a ética, o trabalho em equipe, a organização e o aprendizado contínuo para resolver problemas e construir soluções úteis.</p>
-<h3>Áreas de atuação</h3>
-<ul class="skill-list">
-<li>Suporte técnico</li>
-<li>Infraestrutura de TI</li>
-<li>Desenvolvimento</li>
-</ul>
-</div>
-</div>
-</section>
-<section aria-labelledby="titulo-projetos" class="section section-alt" id="projetos">
-<div class="container">
-<div class="section-heading">
-<div>
-<p class="eyebrow">02 / Projetos</p>
-<h2 id="titulo-projetos">Projetos em destaque.</h2>
-</div>
-</div><p class="section-intro">Soluções que desenvolvi e compartilho no GitHub, apresentadas com seu contexto, funcionalidades e tecnologias.</p>
-<div class="projects-grid" id="github-projects">
-<article class="project-card github-card">
-<a aria-label="Ampliar imagem de Control Finance (abre em nova aba)" class="project-screenshot" href="assets/projeto-controle-financeiro.webp" rel="noopener noreferrer" target="_blank">
-<img alt="Dashboard do Control Finance com saldo, receitas, despesas e gráfico de evolução financeira" decoding="async" loading="lazy" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px" src="assets/projeto-controle-financeiro.webp" srcset="assets/projeto-controle-financeiro-640.webp 640w, assets/projeto-controle-financeiro.webp 1200w"/>
-</a>
-<div class="project-body">
-<h3>Control Finance</h3><dl class="project-context"><dt>O problema</dt><dd>Centralizar o acompanhamento das finanças pessoais.</dd><dt>A solução</dt><dd>Registro de receitas e despesas, painel mensal e relatórios, com API e persistência de dados.</dd></dl><p class="project-highlights">Destaques técnicos: interface React/TypeScript, API Node.js/Express, modelagem de dados com Prisma e PostgreSQL e testes com Vitest.</p><p class="small-label technology-label">
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projetos"
+                >Explorar projetos <span aria-hidden="true">↗</span></a
+              >
+              <a class="btn btn-outline" href="#curriculo"
+                >Conhecer meu currículo ↓</a
+              >
+            </div>
+          </div>
+          <figure class="portrait">
+            <div class="portrait-frame">
+              <img
+                alt="Cristiano Magno em sua formatura, vestindo beca e segurando o diploma"
+                fetchpriority="high"
+                height="1200"
+                sizes="(max-width: 640px) 290px, (max-width: 960px) 40vw, 440px"
+                src="assets/cristiano-magno-800.webp"
+                srcset="
+                  assets/cristiano-magno-400.webp 400w,
+                  assets/cristiano-magno-800.webp 800w
+                "
+                width="800"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section aria-labelledby="titulo-sobre" class="section" id="sobre">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">01 / Minha trajetória</p>
+            <h2 id="titulo-sobre">Um pouco<br />sobre mim.</h2>
+          </div>
+          <div class="about-content">
+            <p class="lead">
+              Sou graduado em Análise e Desenvolvimento de Sistemas pela
+              Universidade de Fortaleza (UNIFOR).
+            </p>
+            <p>
+              Tenho experiência em suporte técnico, infraestrutura de TI e
+              desenvolvimento. Minha trajetória na área de tecnologia começou em
+              2010, atuando no atendimento a usuários, na instalação e
+              manutenção de computadores e notebooks e na administração de
+              ambientes de TI.
+            </p>
+            <h3>Infraestrutura e suporte</h3>
+            <p>
+              Na área de infraestrutura, trabalho com redes de computadores,
+              cabeamento estruturado, equipamentos UniFi, firewall pfSense,
+              GLPI, Zabbix e sistemas de CFTV. Também tenho experiência com
+              suporte a softwares, impressoras, automação de PDV e ERP
+              Consinco/TOTVS.
+            </p>
+            <h3>Desenvolvimento e aprendizado</h3>
+            <p>
+              Complemento essa experiência com formação em desenvolvimento Full
+              Stack, além da construção de projetos com HTML, CSS, JavaScript,
+              React, Node.js, APIs, Git/GitHub e banco de dados. Valorizo a
+              ética, o trabalho em equipe, a organização e o aprendizado
+              contínuo para resolver problemas e construir soluções úteis.
+            </p>
+            <h3>Áreas de atuação</h3>
+            <ul class="skill-list">
+              <li>Suporte técnico</li>
+              <li>Infraestrutura de TI</li>
+              <li>Desenvolvimento</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="titulo-projetos"
+        class="section section-alt"
+        id="projetos"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Projetos</p>
+              <h2 id="titulo-projetos">Projetos em destaque.</h2>
+            </div>
+          </div>
+          <p class="section-intro">
+            Soluções que desenvolvi e compartilho no GitHub, apresentadas com
+            seu contexto, funcionalidades e tecnologias.
+          </p>
+          <div class="projects-grid" id="github-projects">
+            <article class="project-card github-card">
+              <a
+                aria-label="Ampliar imagem de Control Finance (abre em nova aba)"
+                class="project-screenshot"
+                href="assets/projeto-controle-financeiro.webp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="Dashboard do Control Finance com saldo, receitas, despesas e gráfico de evolução financeira"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px"
+                  src="assets/projeto-controle-financeiro.webp"
+                  srcset="
+                    assets/projeto-controle-financeiro-640.webp  640w,
+                    assets/projeto-controle-financeiro.webp     1200w
+                  "
+                />
+              </a>
+              <div class="project-body">
+                <h3>Control Finance</h3>
+                <dl class="project-context">
+                  <dt>O problema</dt>
+                  <dd>Centralizar o acompanhamento das finanças pessoais.</dd>
+                  <dt>A solução</dt>
+                  <dd>
+                    Registro de receitas e despesas, painel mensal e relatórios,
+                    com API e persistência de dados.
+                  </dd>
+                </dl>
+                <p class="project-highlights">
+                  Destaques técnicos: interface React/TypeScript, API
+                  Node.js/Express, modelagem de dados com Prisma e PostgreSQL e
+                  testes com Vitest.
+                </p>
+                <p class="small-label technology-label">
                   Tecnologias utilizadas
                 </p>
-<ul aria-label="Tecnologias utilizadas em Control Finance" class="project-tags">
-<li>React</li>
-<li>TypeScript</li>
-<li>Vite</li>
-<li>Node.js</li>
-<li>Express</li>
-<li>Prisma</li>
-<li>PostgreSQL</li>
-<li>Vitest</li>
-</ul>
-<a aria-label="Ver Control Finance no GitHub (abre em nova aba)" class="github-project-link" href="https://github.com/cristianosolutions/controle-financeiro" rel="noopener noreferrer" target="_blank">Ver no GitHub <span aria-hidden="true">↗</span></a>
-</div>
-</article>
-<article class="project-card github-card">
-<a aria-label="Ampliar imagem de NFC-e Monitor (abre em nova aba)" class="project-screenshot" href="assets/projeto-nfce-monitor.webp" rel="noopener noreferrer" target="_blank">
-<img alt="Interface do NFC-e Monitor com análise de XMLs, consulta à SEFAZ e indicadores de situação fiscal" decoding="async" loading="lazy" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px" src="assets/projeto-nfce-monitor.webp" srcset="assets/projeto-nfce-monitor-640.webp 640w, assets/projeto-nfce-monitor.webp 1200w"/>
-</a>
-<div class="project-body">
-<h3>NFC-e Monitor</h3><dl class="project-context"><dt>O problema</dt><dd>Conferir arquivos XML e verificar a situação fiscal das NFC-e.</dd><dt>A solução</dt><dd>Leitura em lote, consulta à SEFAZ/SVRS com certificado A1, filtros e exportação para Excel.</dd></dl><p class="project-highlights">Destaques técnicos: processamento de XMLs, consulta fiscal à SEFAZ/SVRS com certificado digital A1 e geração de planilhas.</p><p class="small-label technology-label">
+                <ul
+                  aria-label="Tecnologias utilizadas em Control Finance"
+                  class="project-tags"
+                >
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Vite</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Prisma</li>
+                  <li>PostgreSQL</li>
+                  <li>Vitest</li>
+                </ul>
+                <a
+                  aria-label="Ver Control Finance no GitHub (abre em nova aba)"
+                  class="github-project-link"
+                  href="https://github.com/cristianosolutions/controle-financeiro"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Ver no GitHub <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card github-card">
+              <a
+                aria-label="Ampliar imagem de NFC-e Monitor (abre em nova aba)"
+                class="project-screenshot"
+                href="assets/projeto-nfce-monitor.webp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="Interface do NFC-e Monitor com análise de XMLs, consulta à SEFAZ e indicadores de situação fiscal"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px"
+                  src="assets/projeto-nfce-monitor.webp"
+                  srcset="
+                    assets/projeto-nfce-monitor-640.webp  640w,
+                    assets/projeto-nfce-monitor.webp     1200w
+                  "
+                />
+              </a>
+              <div class="project-body">
+                <h3>NFC-e Monitor</h3>
+                <dl class="project-context">
+                  <dt>O problema</dt>
+                  <dd>
+                    Conferir arquivos XML e verificar a situação fiscal das
+                    NFC-e.
+                  </dd>
+                  <dt>A solução</dt>
+                  <dd>
+                    Leitura em lote, consulta à SEFAZ/SVRS com certificado A1,
+                    filtros e exportação para Excel.
+                  </dd>
+                </dl>
+                <p class="project-highlights">
+                  Destaques técnicos: processamento de XMLs, consulta fiscal à
+                  SEFAZ/SVRS com certificado digital A1 e geração de planilhas.
+                </p>
+                <p class="small-label technology-label">
                   Tecnologias utilizadas
                 </p>
-<ul aria-label="Tecnologias utilizadas em NFC-e Monitor" class="project-tags">
-<li>Python</li>
-<li>Tkinter / ttk</li>
-<li>ElementTree</li>
-<li>Requests</li>
-<li>Cryptography</li>
-<li>OpenPyXL</li>
-<li>PyInstaller</li>
-</ul>
-<a aria-label="Ver NFC-e Monitor no GitHub (abre em nova aba)" class="github-project-link" href="https://github.com/cristianosolutions/nfce-monitor" rel="noopener noreferrer" target="_blank">Ver no GitHub <span aria-hidden="true">↗</span></a>
-</div>
-</article>
-<article class="project-card github-card">
-<a aria-label="Ampliar imagem de PDV Layout Studio (abre em nova aba)" class="project-screenshot" href="assets/projeto-pdv-layout.webp" rel="noopener noreferrer" target="_blank">
-<img alt="PDV Layout Studio com editor visual, modelo de supermercado, camadas e painel de propriedades" decoding="async" loading="lazy" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px" src="assets/projeto-pdv-layout.webp" srcset="assets/projeto-pdv-layout-640.webp 640w, assets/projeto-pdv-layout.webp 1200w"/>
-</a>
-<div class="project-body">
-<h3>PDV Layout Studio</h3><dl class="project-context"><dt>O problema</dt><dd>Facilitar a criação visual de telas para pontos de venda.</dd><dt>A solução</dt><dd>Edição de elementos no canvas, organização por camadas, projetos JSON e exportação em PNG.</dd></dl><p class="project-highlights">Destaques técnicos: editor visual com React e Konva, manipulação de objetos em canvas e exportação de layouts.</p><p class="small-label technology-label">
+                <ul
+                  aria-label="Tecnologias utilizadas em NFC-e Monitor"
+                  class="project-tags"
+                >
+                  <li>Python</li>
+                  <li>Tkinter / ttk</li>
+                  <li>ElementTree</li>
+                  <li>Requests</li>
+                  <li>Cryptography</li>
+                  <li>OpenPyXL</li>
+                  <li>PyInstaller</li>
+                </ul>
+                <a
+                  aria-label="Ver NFC-e Monitor no GitHub (abre em nova aba)"
+                  class="github-project-link"
+                  href="https://github.com/cristianosolutions/nfce-monitor"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Ver no GitHub <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card github-card">
+              <a
+                aria-label="Ampliar imagem de PDV Layout Studio (abre em nova aba)"
+                class="project-screenshot"
+                href="assets/projeto-pdv-layout.webp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="PDV Layout Studio com editor visual, modelo de supermercado, camadas e painel de propriedades"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 960px) 45vw, 360px"
+                  src="assets/projeto-pdv-layout.webp"
+                  srcset="
+                    assets/projeto-pdv-layout-640.webp  640w,
+                    assets/projeto-pdv-layout.webp     1200w
+                  "
+                />
+              </a>
+              <div class="project-body">
+                <h3>PDV Layout Studio</h3>
+                <dl class="project-context">
+                  <dt>O problema</dt>
+                  <dd>
+                    Facilitar a criação visual de telas para pontos de venda.
+                  </dd>
+                  <dt>A solução</dt>
+                  <dd>
+                    Edição de elementos no canvas, organização por camadas,
+                    projetos JSON e exportação em PNG.
+                  </dd>
+                </dl>
+                <p class="project-highlights">
+                  Destaques técnicos: editor visual com React e Konva,
+                  manipulação de objetos em canvas e exportação de layouts.
+                </p>
+                <p class="small-label technology-label">
                   Tecnologias utilizadas
                 </p>
-<ul aria-label="Tecnologias utilizadas em PDV Layout Studio" class="project-tags">
-<li>React</li>
-<li>TypeScript</li>
-<li>Vite</li>
-<li>Konva</li>
-<li>CSS</li>
-<li>Lucide React</li>
-<li>ESLint</li>
-</ul>
-<a aria-label="Ver PDV Layout Studio no GitHub (abre em nova aba)" class="github-project-link" href="https://github.com/cristianosolutions/pdv-layout" rel="noopener noreferrer" target="_blank">Ver no GitHub <span aria-hidden="true">↗</span></a>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section aria-labelledby="titulo-experiencia" class="section experience-section" id="experiencia"><div class="container experience-grid"><div><p class="eyebrow">03 / Experiência</p><h2 id="titulo-experiencia">Tecnologia na prática,<br/>todos os dias.</h2><p class="experience-intro">Atuação em suporte e infraestrutura de TI, aliada ao desenvolvimento de soluções para problemas reais.</p></div><div class="experience-items"><article><span class="experience-index">01</span><div><h3>Suporte técnico e atendimento</h3><p>Diagnóstico de problemas, manutenção de computadores e notebooks, configuração de sistemas, impressoras e suporte aos usuários.</p></div></article><article><span class="experience-index">02</span><div><h3>Infraestrutura e operações</h3><p>Redes, cabeamento estruturado, equipamentos UniFi, pfSense, CFTV e suporte a ambientes de automação de PDV e ERP.</p></div></article><article><span class="experience-index">03</span><div><h3>Desenvolvimento de soluções</h3><p>Projetos web e ferramentas para automação e organização de informações, com foco em aplicações úteis e manutenção do código.</p></div></article></div></div></section><section aria-labelledby="titulo-curriculo" class="section resume-section" id="curriculo">
-<div class="container resume-grid">
-<div>
-<p class="eyebrow">04 / Currículo</p>
-<h2 id="titulo-curriculo">
-              Minha trajetória,<br/>em perspectiva.
+                <ul
+                  aria-label="Tecnologias utilizadas em PDV Layout Studio"
+                  class="project-tags"
+                >
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Vite</li>
+                  <li>Konva</li>
+                  <li>CSS</li>
+                  <li>Lucide React</li>
+                  <li>ESLint</li>
+                </ul>
+                <a
+                  aria-label="Ver PDV Layout Studio no GitHub (abre em nova aba)"
+                  class="github-project-link"
+                  href="https://github.com/cristianosolutions/pdv-layout"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Ver no GitHub <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="titulo-experiencia"
+        class="section experience-section"
+        id="experiencia"
+      >
+        <div class="container experience-grid">
+          <div>
+            <p class="eyebrow">03 / Experiência</p>
+            <h2 id="titulo-experiencia">
+              Tecnologia na prática,<br />todos os dias.
             </h2>
-<p class="resume-intro">
+            <p class="experience-intro">
+              Atuação em suporte e infraestrutura de TI, aliada ao
+              desenvolvimento de soluções para problemas reais.
+            </p>
+          </div>
+          <div class="experience-items">
+            <article>
+              <span class="experience-index">01</span>
+              <div>
+                <h3>Suporte técnico e atendimento</h3>
+                <p>
+                  Diagnóstico de problemas, manutenção de computadores e
+                  notebooks, configuração de sistemas, impressoras e suporte aos
+                  usuários.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="experience-index">02</span>
+              <div>
+                <h3>Infraestrutura e operações</h3>
+                <p>
+                  Redes, cabeamento estruturado, equipamentos UniFi, pfSense,
+                  CFTV e suporte a ambientes de automação de PDV e ERP.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="experience-index">03</span>
+              <div>
+                <h3>Desenvolvimento de soluções</h3>
+                <p>
+                  Projetos web e ferramentas para automação e organização de
+                  informações, com foco em aplicações úteis e manutenção do
+                  código.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="titulo-curriculo"
+        class="section resume-section"
+        id="curriculo"
+      >
+        <div class="container resume-grid">
+          <div>
+            <p class="eyebrow">04 / Currículo</p>
+            <h2 id="titulo-curriculo">
+              Minha trajetória,<br />em perspectiva.
+            </h2>
+            <p class="resume-intro">
               Conheça minhas frentes de atuação e baixe meu currículo em PDF.
             </p>
-<a class="btn btn-outline" download="Curriculo-Cristiano-Magno.pdf" href="assets/cristiano-magno.pdf" id="resume-download">Baixar currículo em PDF <span aria-hidden="true">↓</span></a>
-<p class="resume-pending" hidden="" id="resume-pending">
+            <a
+              class="btn btn-outline"
+              download="Curriculo-Cristiano-Magno.pdf"
+              href="assets/cristiano-magno.pdf"
+              id="resume-download"
+              >Baixar currículo em PDF <span aria-hidden="true">↓</span></a
+            >
+            <p class="resume-pending" hidden="" id="resume-pending">
               Currículo em atualização
             </p>
-</div>
-<div class="resume-list">
-<article>
-<span class="resume-number">01</span>
-<div><p class="small-label">Atuação</p><h3>Suporte técnico</h3><p>Atendimento, diagnóstico de problemas e orientação a usuários.</p></div>
-</article>
-<article>
-<span class="resume-number">02</span>
-<div><p class="small-label">Atuação</p><h3>Infraestrutura de TI</h3><p>Uma visão integrada de ambientes, equipamentos e serviços.</p></div>
-</article>
-<article>
-<span class="resume-number">03</span>
-<div><p class="small-label">Atuação</p><h3>Desenvolvimento</h3><p>Construção de soluções e automação de tarefas com código.</p></div>
-</article>
-</div>
-</div>
-</section>
-<section aria-label="Formulário de contato" class="section" id="contato">
-<div class="container contact-grid">
-<!-- Configure seu endereço em CONTACT_EMAIL, no script.js. -->
-<form aria-label="Contato" class="contact-form" id="contact-form">
-<p class="form-note" id="form-help">
+          </div>
+          <div class="resume-list">
+            <article>
+              <span class="resume-number">01</span>
+              <div>
+                <p class="small-label">Atuação</p>
+                <h3>Suporte técnico</h3>
+                <p>
+                  Atendimento, diagnóstico de problemas e orientação a usuários.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="resume-number">02</span>
+              <div>
+                <p class="small-label">Atuação</p>
+                <h3>Infraestrutura de TI</h3>
+                <p>
+                  Uma visão integrada de ambientes, equipamentos e serviços.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="resume-number">03</span>
+              <div>
+                <p class="small-label">Atuação</p>
+                <h3>Desenvolvimento</h3>
+                <p>Construção de soluções e automação de tarefas com código.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section aria-label="Formulário de contato" class="section" id="contato">
+        <div class="container contact-grid">
+          <!-- Configure seu endereço em CONTACT_EMAIL, no script.js. -->
+          <form aria-label="Contato" class="contact-form" id="contact-form">
+            <p class="form-note" id="form-help">
               Este formulário prepara um e-mail no seu aplicativo. O envio deve
               ser confirmado por você nesse aplicativo.
             </p>
-<label for="nome">Nome</label><input autocomplete="name" id="nome" maxlength="100" name="nome" placeholder="Como posso chamar você?" required="" type="text"/>
-<label for="email">E-mail</label><input autocomplete="email" id="email" maxlength="254" name="email" placeholder="voce@exemplo.com" required="" type="email"/>
-<label for="mensagem">Mensagem</label><textarea id="mensagem" maxlength="3000" minlength="10" name="mensagem" placeholder="Conte um pouco sobre seu projeto…" required="" rows="5"></textarea>
-<button aria-describedby="form-help" class="btn btn-primary" disabled="" type="submit">
+            <label for="nome">Nome</label
+            ><input
+              autocomplete="name"
+              id="nome"
+              maxlength="100"
+              name="nome"
+              placeholder="Como posso chamar você?"
+              required=""
+              type="text"
+            />
+            <label for="email">E-mail</label
+            ><input
+              autocomplete="email"
+              id="email"
+              maxlength="254"
+              name="email"
+              placeholder="voce@exemplo.com"
+              required=""
+              type="email"
+            />
+            <label for="mensagem">Mensagem</label
+            ><textarea
+              id="mensagem"
+              maxlength="3000"
+              minlength="10"
+              name="mensagem"
+              placeholder="Conte um pouco sobre seu projeto…"
+              required=""
+              rows="5"
+            ></textarea>
+            <button
+              aria-describedby="form-help"
+              class="btn btn-primary"
+              disabled=""
+              type="submit"
+            >
               Preparar e-mail <span aria-hidden="true">↗</span>
-</button>
-<p aria-live="polite" class="form-status" id="form-status" role="status"></p>
-<a class="text-link" href="mailto:cristianosolutions@gmail.com" id="contact-email">Ou escreva para: cristianosolutions@gmail.com</a>
-<noscript>
-<p>Ative o JavaScript para usar o formulário de contato.</p>
-</noscript>
-</form>
-</div>
-</section>
-</main>
-<footer class="site-footer">
-<div class="container footer-inner">
-<p>© <span id="ano">2026</span> Cristiano Magno.</p>
-<nav aria-label="Redes sociais" class="footer-social">
-<a aria-label="GitHub de Cristiano Magno (abre em nova aba)" href="https://github.com/cristianosolutions" rel="noopener noreferrer" target="_blank" title="GitHub"><svg aria-hidden="true" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.77-.244.77-.542 0-.267-.01-.975-.015-1.914-3.13.68-3.79-1.51-3.79-1.51-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.684.077-.684 1.13.08 1.725 1.16 1.725 1.16 1.005 1.723 2.637 1.225 3.28.937.103-.729.393-1.225.715-1.507-2.498-.284-5.124-1.249-5.124-5.562 0-1.229.44-2.233 1.16-3.02-.116-.284-.503-1.428.11-2.977 0 0 .945-.303 3.095 1.154a10.79 10.79 0 0 1 5.635 0c2.148-1.457 3.09-1.154 3.09-1.154.616 1.549.229 2.693.113 2.977.723.787 1.158 1.791 1.158 3.02 0 4.324-2.63 5.275-5.136 5.553.404.349.764 1.037.764 2.089 0 1.508-.014 2.725-.014 3.094 0 .3.203.651.775.54A11.252 11.252 0 0 0 12 .75Z"></path></svg></a>
-<a aria-label="LinkedIn de Cristiano Magno (abre em nova aba)" href="https://www.linkedin.com/in/cristianosolutions" rel="noopener noreferrer" target="_blank" title="LinkedIn"><svg aria-hidden="true" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8v-4.64c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.72H9.53V9.2h2.83v1.3h.04c.39-.74 1.36-1.53 2.8-1.53 3 0 3.55 1.97 3.55 4.53v5.25Z"></path></svg></a>
-<a aria-label="Conversar com Cristiano Magno no WhatsApp (abre em nova aba)" href="https://wa.me/5585996805634" rel="noopener noreferrer" target="_blank" title="WhatsApp"><svg aria-hidden="true" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.47 0 .11 5.35.1 11.93a11.9 11.9 0 0 0 1.6 5.97L0 24l6.25-1.64a11.94 11.94 0 0 0 5.8 1.48h.01c6.58 0 11.93-5.35 11.94-11.93a11.86 11.86 0 0 0-3.48-8.43ZM12.06 21.82a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.71.97.99-3.62-.24-.37a9.88 9.88 0 0 1-1.52-5.28c0-5.47 4.46-9.92 9.93-9.92a9.85 9.85 0 0 1 7.02 2.91 9.86 9.86 0 0 1 2.9 7.02c0 5.47-4.45 9.92-9.97 9.88Zm5.44-7.42c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.78-1.66-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.62-.93-2.22-.24-.58-.49-.5-.68-.51h-.57c-.2 0-.53.08-.8.38-.28.3-1.05 1.02-1.05 2.49s1.07 2.89 1.22 3.09c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"></path></svg></a>
-</nav>
-<a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
-</div>
-</footer>
-</body>
+            </button>
+            <p
+              aria-live="polite"
+              class="form-status"
+              id="form-status"
+              role="status"
+            ></p>
+            <a
+              class="text-link"
+              href="mailto:cristianosolutions@gmail.com"
+              id="contact-email"
+              >Ou escreva para: cristianosolutions@gmail.com</a
+            >
+            <noscript>
+              <p>Ative o JavaScript para usar o formulário de contato.</p>
+            </noscript>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="ano">2026</span> Cristiano Magno.</p>
+        <nav aria-label="Redes sociais" class="footer-social">
+          <a
+            aria-label="GitHub de Cristiano Magno (abre em nova aba)"
+            href="https://github.com/cristianosolutions"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="GitHub"
+            ><svg
+              aria-hidden="true"
+              fill="currentColor"
+              focusable="false"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.77-.244.77-.542 0-.267-.01-.975-.015-1.914-3.13.68-3.79-1.51-3.79-1.51-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.684.077-.684 1.13.08 1.725 1.16 1.725 1.16 1.005 1.723 2.637 1.225 3.28.937.103-.729.393-1.225.715-1.507-2.498-.284-5.124-1.249-5.124-5.562 0-1.229.44-2.233 1.16-3.02-.116-.284-.503-1.428.11-2.977 0 0 .945-.303 3.095 1.154a10.79 10.79 0 0 1 5.635 0c2.148-1.457 3.09-1.154 3.09-1.154.616 1.549.229 2.693.113 2.977.723.787 1.158 1.791 1.158 3.02 0 4.324-2.63 5.275-5.136 5.553.404.349.764 1.037.764 2.089 0 1.508-.014 2.725-.014 3.094 0 .3.203.651.775.54A11.252 11.252 0 0 0 12 .75Z"
+              ></path></svg
+          ></a>
+          <a
+            aria-label="LinkedIn de Cristiano Magno (abre em nova aba)"
+            href="https://www.linkedin.com/in/cristianosolutions"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="LinkedIn"
+            ><svg
+              aria-hidden="true"
+              fill="currentColor"
+              focusable="false"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8v-4.64c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.72H9.53V9.2h2.83v1.3h.04c.39-.74 1.36-1.53 2.8-1.53 3 0 3.55 1.97 3.55 4.53v5.25Z"
+              ></path></svg
+          ></a>
+          <a
+            aria-label="Conversar com Cristiano Magno no WhatsApp (abre em nova aba)"
+            href="https://wa.me/5585996805634"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="WhatsApp"
+            ><svg
+              aria-hidden="true"
+              fill="currentColor"
+              focusable="false"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.47 0 .11 5.35.1 11.93a11.9 11.9 0 0 0 1.6 5.97L0 24l6.25-1.64a11.94 11.94 0 0 0 5.8 1.48h.01c6.58 0 11.93-5.35 11.94-11.93a11.86 11.86 0 0 0-3.48-8.43ZM12.06 21.82a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.71.97.99-3.62-.24-.37a9.88 9.88 0 0 1-1.52-5.28c0-5.47 4.46-9.92 9.93-9.92a9.85 9.85 0 0 1 7.02 2.91 9.86 9.86 0 0 1 2.9 7.02c0 5.47-4.45 9.92-9.97 9.88Zm5.44-7.42c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.78-1.66-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.62-.93-2.22-.24-.58-.49-.5-.68-.51h-.57c-.2 0-.53.08-.8.38-.28.3-1.05 1.02-1.05 2.49s1.07 2.89 1.22 3.09c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"
+              ></path></svg
+          ></a>
+        </nav>
+        <a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
 </html>
