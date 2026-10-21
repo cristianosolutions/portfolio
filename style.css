@@ -656,8 +656,9 @@ main section:focus { outline: none; }
 .contact-title { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 25px; }
 @media(max-width: 960px) { .experience-grid { gap: 36px; } }
 @media(max-width: 640px) { .experience-grid { grid-template-columns: 1fr; } }
-
-/* Mantém o rodapé acima do selo fixo da hospedagem no celular. */
+/* No celular: direitos autorais, link de início e redes sociais. */
 @media (max-width: 640px) {
-  .site-footer { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+  .footer-inner > p { order: 0; }
+  .footer-inner > a[href="#inicio"] { order: 1; flex-basis: 100%; justify-content: center; }
+  .footer-social { order: 2; }
 }
