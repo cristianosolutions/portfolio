@@ -634,3 +634,25 @@ h3 {
   .nav { padding-inline: 0; }
   .theme-toggle { top: 14px; }
 }
+/* Ajustes de manutenção: cabeçalho responsivo e foco dos destinos de âncoras. */
+main section:focus { outline: none; }
+@media (max-width: 640px) {
+  .nav { justify-content: space-between; padding-right: 56px; }
+  .nav-links { order: 3; flex-basis: 100%; justify-content: flex-start; }
+  .theme-toggle { right: 0; top: 14px; }
+}
+
+/* Melhorias de apresentação profissional */
+.section-intro { color: var(--muted); max-width: 69ch; margin: -15px 0 32px; }
+.project-highlights { color: var(--muted); font-size: .9rem; line-height: 1.65; margin: -6px 0 24px; }
+.experience-section { border-bottom: 1px solid var(--border); }
+.experience-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 72px; }
+.experience-intro { margin-top: 24px; max-width: 44ch; color: var(--muted); }
+.experience-items article { display: flex; align-items: start; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--border); }
+.experience-items article:first-child { padding-top: 0; }
+.experience-index { color: var(--accent); font-family: monospace; flex-shrink: 0; }
+.experience-items h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.experience-items p { color: var(--muted); font-size: .95rem; }
+.contact-title { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 25px; }
+@media(max-width: 960px) { .experience-grid { gap: 36px; } }
+@media(max-width: 640px) { .experience-grid { grid-template-columns: 1fr; } }

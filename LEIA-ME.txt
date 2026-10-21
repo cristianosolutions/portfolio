@@ -56,9 +56,31 @@ Redes sociais podem guardar a imagem antiga em cache após uma atualização.
 
 PUBLICAÇÃO
 No terminal da pasta do portfólio:
-git add index.html style.css script.js assets LEIA-ME.txt
+git add index.html style.css script.js theme.js assets LEIA-ME.txt RELATORIO-QA.md
 git commit -m "Melhora conteúdo, desempenho e acessibilidade"
 git push
 
 A Netlify publica automaticamente após o push se a integração com a branch
 main estiver ativa. Confira o resultado em Deploys e teste o endereço público.
+AJUSTES DA REVISÃO (OUTUBRO/2026)
+=================================
+- Navegação mantém a URL fixa; links recebidos com #seção abrem o destino e removem o fragmento.
+- Menu móvel pode ser fechado clicando fora, pressionando Escape ou escolhendo uma seção.
+- Tema inicial usa preferência claro/escuro do sistema, salvo se o usuário já escolheu outro.
+- Melhor alinhamento entre o botão do menu e o seletor de tema no celular.
+- O currículo PDF deve ser mantido em assets/cristiano-magno.pdf; validar este arquivo no deploy.
+- O formulário continua usando mailto: não existe envio automático pelo site.
+- Não publicar o diretório .git num pacote enviado manualmente à Netlify.
+
+CHECKLIST DE PUBLICAÇÃO
+======================
+1. Confirmar existência de todos os arquivos em assets/.
+2. Executar testes de navegação, alternância de tema, menu móvel e formulário.
+3. Conferir links diretos /#projetos e /#contato e botão de currículo.
+4. Validar a página em celular e com zoom de 200%.
+5. Verificar SEO, Open Graph e cache depois do deploy.
+
+MELHORIAS DE OUTUBRO DE 2026
+- Seção de experiência e contexto técnico dos projetos adicionados.
+- Navegação inclui o link para Experiência.
+- Confira os testes e limitações no arquivo RELATORIO-QA.md.

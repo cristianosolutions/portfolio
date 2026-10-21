@@ -3,9 +3,10 @@
 (() => {
   const root = document.documentElement;
   const storageKey = "portfolio-theme";
-  let theme = "dark";
+  let theme = window.matchMedia?.("(prefers-color-scheme: light)").matches ? "light" : "dark";
   try {
-    if (localStorage.getItem(storageKey) === "light") theme = "light";
+    const saved = localStorage.getItem(storageKey);
+    if (saved === "light" || saved === "dark") theme = saved;
   } catch { /* O tema continua funcionando quando o armazenamento é bloqueado. */ }
 
   function applyTheme(value) {

@@ -42,6 +42,10 @@ function initializeNavigation() {
       toggle.focus();
     }
   });
+  document.addEventListener("pointerdown", (event) => {
+    if (mobileViewport.matches && toggle.getAttribute("aria-expanded") === "true" &&
+        !toggle.contains(event.target) && !menu.contains(event.target)) setMenuOpen(false);
+  });
   mobileViewport.addEventListener("change", synchronizeViewport);
   synchronizeViewport();
 }
@@ -140,7 +144,7 @@ function initializeScrollNavigation() {
   scheduleUpdate();
 }
 initializeScrollNavigation();
-// Navega entre as seções mantendo o endereço da página fixo.
+// Navega pelas seções sem alterar o endereço da página.
 function initializeSectionLinks() {
   document.addEventListener("click", (event) => {
     if (event.defaultPrevented || event.button !== 0 ||
@@ -148,8 +152,7 @@ function initializeSectionLinks() {
     const link = event.target.closest('a[href^="#"]');
     if (!link || link.hasAttribute("download") ||
         (link.target && link.target !== "_self")) return;
-    const id = link.getAttribute("href").slice(1);
-    const target = document.getElementById(id);
+    const target = document.getElementById(link.hash.slice(1));
     if (!target) return;
     event.preventDefault();
     if (!target.hasAttribute("tabindex")) {
@@ -162,8 +165,6 @@ function initializeSectionLinks() {
       block: "start"
     });
   });
-
-  // Remove fragmentos antigos depois de o navegador abrir a seção solicitada.
   function clearInitialHash() {
     if (window.location.hash) {
       window.history.replaceState(window.history.state, "",
