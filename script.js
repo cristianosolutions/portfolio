@@ -19,7 +19,7 @@ function initializeNavigation() {
   const mobileViewport = window.matchMedia(MOBILE_MENU_QUERY);
   const setMenuOpen = (open) => {
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.textContent = open ? "Fechar menu" : "Menu";
+    toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
     menu.hidden = mobileViewport.matches && !open;
   };
   const synchronizeViewport = () => {

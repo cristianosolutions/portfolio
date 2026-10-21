@@ -154,14 +154,16 @@ h3 {
 .nav-links a[aria-current] {
   color: var(--accent);
 }
-.menu-toggle {
-  min-height: 44px;
-  padding: 8px 16px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--text);
-}
+.menu-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 50%; color: var(--accent); background: var(--surface); }
+.menu-toggle:hover { border-color: var(--accent); }
+.menu-icon { position: relative; width: 20px; height: 16px; }
+.menu-icon span { position: absolute; left: 0; width: 20px; height: 2px; border-radius: 2px; background: currentColor; transition: transform .2s ease, opacity .2s ease; }
+.menu-icon span:nth-child(1) { top: 0; }
+.menu-icon span:nth-child(2) { top: 7px; }
+.menu-icon span:nth-child(3) { top: 14px; }
+.menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* Apresentação */
 .hero {
