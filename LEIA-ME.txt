@@ -1,8 +1,8 @@
 PORTFÓLIO DE CRISTIANO MAGNO
 ==========================
 
-Site estático, sem dependências de produção nem etapa de compilação.
-Endereço: https://cristianomagno.netlify.app/
+Site estático, sem etapa de compilação. Vercel Analytics instalado; integração HTML em analytics.js.
+Endereço: https://cristianomagno.vercel.app/
 
 ARQUIVOS
 index.html: apresentação, formação, projetos, trajetória, contato e rodapé.
@@ -60,13 +60,13 @@ git add index.html style.css script.js theme.js assets LEIA-ME.txt RELATORIO-QA.
 git commit -m "Melhora conteúdo, desempenho e acessibilidade"
 git push
 
-A Netlify publica automaticamente após o push se a integração com a branch
-main estiver ativa. Confira o resultado em Deploys e teste o endereço público.
+A Vercel publica automaticamente após o push se a integração com a branch
+main estiver ativa. Confira o resultado em Deployments e teste o endereço público.
 AJUSTES DA REVISÃO (OUTUBRO/2026)
 =================================
 - Navegação mantém a URL fixa; links recebidos com #seção abrem o destino e removem o fragmento.
 - Menu móvel pode ser fechado clicando fora, pressionando Escape ou escolhendo uma seção.
-- Tema inicial usa preferência claro/escuro do sistema, salvo se o usuário já escolheu outro.
+- Tema inicial escuro; a escolha explícita do visitante é preservada para as próximas visitas.
 - Melhor alinhamento entre o botão do menu e o seletor de tema no celular.
 - O currículo PDF deve ser mantido em assets/cristiano-magno.pdf; validar este arquivo no deploy.
 - O formulário continua usando mailto: não existe envio automático pelo site.
@@ -82,5 +82,11 @@ CHECKLIST DE PUBLICAÇÃO
 
 MELHORIAS DE OUTUBRO DE 2026
 - Seção de experiência e contexto técnico dos projetos adicionados.
-- Navegação inclui o link para Experiência.
+- Cabeçalho com Início, Sobre, Projetos e Vamos conversar.
 - Confira os testes e limitações no arquivo RELATORIO-QA.md.
+
+VERCEL ANALYTICS
+analytics.js carrega a integração HTML somente em endereços .vercel.app.
+Habilite Web Analytics no painel da Vercel e publique novamente.
+A confirmação da coleta deve ser feita no painel após visitar o site publicado.
+node_modules/ e .vercel/ ficam fora do Git; package.json e package-lock.json podem ser versionados.

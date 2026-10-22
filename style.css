@@ -426,6 +426,7 @@ h3 {
 
 /* Contato por aplicativo de e-mail */
 #contato {
+  padding-block: clamp(32px, 4vh, 48px);
   border-top: 1px solid var(--border);
   background: var(--surface);
 }
@@ -662,3 +663,6 @@ main section:focus { outline: none; }
   .footer-inner > a[href="#inicio"] { order: 1; flex-basis: 100%; justify-content: center; }
   .footer-social { order: 2; }
 }
+
+/* Evita reservar espaço para mensagens antes de usar o formulário. */
+.form-status:empty { min-height: 0; margin-top: 0; }
